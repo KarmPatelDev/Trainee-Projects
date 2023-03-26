@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+
+    <title>Custom Captcha</title>
+
+    <!-- font-awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header>I'm Not A Robot</header>
+        <div class="captcha-area">
+            <div class="captcha-img">
+                <img src="images/captcha-bg.png" alt=""/>
+                <span class="captcha"></span>
+            </div>
+            <button class="reload-btn"><i class="fas fa-redo-alt"></i></button>
+        </div>
+
+        <form action="#" class="input-area">
+            <input type="text" placeholder="Enter Captcha" maxlength="6" required/>
+            <button class="check-btn">Check</button>
+        </form>
+
+        <div class="status-txt"></div>
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
